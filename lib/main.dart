@@ -13,7 +13,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(useMaterial3: true),
+      theme: ThemeData().copyWith(
+        useMaterial3: true,
+        scaffoldBackgroundColor: const Color.fromARGB(255, 225, 232, 252),
+      ),
       home: const Expenses(),
     );
   }
