@@ -1,6 +1,10 @@
 import 'package:expense_tracker_app/widgets/expenses.dart';
 import 'package:flutter/material.dart';
 
+var kColorScheme = ColorScheme.fromSeed(
+  seedColor: const Color.fromARGB(255, 96, 59, 181),
+);
+
 void main() {
   runApp(const MyApp());
 }
@@ -15,7 +19,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData().copyWith(
         useMaterial3: true,
-        scaffoldBackgroundColor: const Color.fromARGB(255, 225, 232, 252),
+        colorScheme: kColorScheme,
+        appBarTheme: const AppBarTheme().copyWith(
+          backgroundColor: kColorScheme.onPrimaryContainer,
+          foregroundColor: kColorScheme.primaryContainer,
+        ),
       ),
       home: const Expenses(),
     );

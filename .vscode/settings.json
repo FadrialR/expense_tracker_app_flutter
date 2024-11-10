@@ -1,0 +1,7 @@
+{
+  "discord.detailsIdling": "",
+  "discord.lowerDetailsEditing": "print('Hello World!);",
+  "discord.removeLowerDetails": true,
+  "discord.removeRemoteRepository": true,
+  "discord.removeDetails": true
+}
