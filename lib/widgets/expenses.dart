@@ -63,7 +63,7 @@ class _ExpensesState extends State<Expenses> {
 
   @override
   Widget build(BuildContext context) {
-    Widget mainContent = Center(
+    Widget mainContent = const Center(
       child: Text('No expenses found. Start adding some!'),
     );
 
@@ -76,7 +76,7 @@ class _ExpensesState extends State<Expenses> {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue[700],
+        backgroundColor: Theme.of(context).appBarTheme.backgroundColor,
         title: const Text(
           'Expense Tracker',
           style: TextStyle(
